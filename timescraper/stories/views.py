@@ -7,7 +7,7 @@ def get_time_stories(request):
     response = requests.get(url)
     html_content = response.text
 
-    # Basic string parsing logic to extract stories
+    
     stories = []
     start_tag = '<a href="'
     end_tag = '</a>'
@@ -31,7 +31,7 @@ def get_time_stories(request):
 
     return JsonResponse(stories, safe=False)
 
-# View for the homepage
+
 def home(request):
     return render(request, 'index.html')
 
