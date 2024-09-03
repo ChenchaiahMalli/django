@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured Voices - TIME</title>
+    <style>
+      /* Reset margins and paddings */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f8f8;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      /* Header section */
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        position: relative;
+      }
+
+      header h1 {
+        color: #e00000;
+        font-size: 36px;
+        margin: 0;
+        font-family: "Times New Roman", serif;
+        position: absolute;
+        left: 80px; /* Added space between TIME logo and menu */
+      }
+
+      /* Hamburger menu */
+      .menu-icon {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      .menu-icon div {
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+      }
+
+      /* Search icon */
+      .search-icon {
+        width: 20px;
+        height: 20px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png");
+        background-size: cover;
+        cursor: pointer;
+      }
+
+      /* Search input that appears when the search icon is clicked */
+      .search-box {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+      }
+
+      .search-box input {
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        display: none;
+      }
+
+      .search-icon:hover + input,
+      .search-box input:focus {
+        display: block;
+      }
+
+      /* Subscribe and Save 80% */
+      .subscribe-banner {
+        background-color: #e00000; /* Changed to red */
+        text-align: left;
+        width: 10%;
+        padding: 10px 0; /* Adjusted padding for a larger size */
+        margin-top: 10px;
+        font-size: 10px; /* Larger font size */
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .subscribe-banner a {
+        color: #fff; /* Text in white */
+        text-adjusted: none;
+      }
+
+      /* Content section */
+      .content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: 20px;
+      }
+
+      .featured-voices {
+        width: 60%;
+      }
+
+      /* Featured Voices section */
+      .featured-voices h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", serif;
+      }
+
+      .featured-voices ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .featured-voices ul li {
+        margin-bottom: 20px;
+      }
+
+      .featured-voices ul li a {
+        color: #e00000;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Times New Roman", serif;
+      }
+
+      .featured-voices ul li p {
+        color: #333;
+        margin: 5px 0 0 0;
+      }
+
+      /* Latest Stories section with yellow background */
+      .latest-stories {
+        background-color: #ffe500;
+        padding: 10px;
+        width: 35%;
+      }
+
+      .latest-stories h3 {
+        background-color: #ffe500;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .latest-stories ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .latest-stories ul li {
+        margin-bottom: 10px;
+      }
+
+      .latest-stories ul li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .latest-stories ul li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <h1>TIME</h1>
+        <div class="search-box">
+          <div class="search-icon"></div>
+          <input type="text" placeholder="Search..." />
+        </div>
+      </header>
+
+      <!-- Subscribe and Save 80% section -->
+      <div class="subscribe-banner">
+        <p><a href="#">Subscribe and Save 80%</a></p>
+      </div>
+
+      <!-- Content section -->
+      <section class="content">
+        <!-- Featured Voices section in 3 rows, 2 columns layout -->
+        <div class="featured-voices">
+          <h2>FEATURED VOICES</h2>
+          <ul>
+            <li>
+              <a href="#">Anatol Lieven</a>
+              <p>Russia Has Been Warning the West About Ukraine for Decades</p>
+            </li>
+            <li>
+              <a href="#">Ismat Ara</a>
+              <p>
+                How It Feels to Be a Muslim Woman Sold by India’s Right Wing
+              </p>
+            </li>
+            <li>
+              <a href="#">Robert J. Davis</a>
+              <p>Why You Shouldn't Exercise to Lose Weight</p>
+            </li>
+            <li>
+              <a href="#">Yohanca Delgado</a>
+              <p>
+                The Life-Changing Practice That Will Help You Feel More
+                Gratitude
+              </p>
+            </li>
+            <li>
+              <a href="#">W. Kamau Bell</a>
+              <p>There’s So Much More To Say About Bill Cosby</p>
+            </li>
+            <li>
+              <a href="#">Christina Bu</a>
+              <p>
+                What Norway Can Teach the World About Switching to Electric
+                Vehicles
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Latest Stories section with yellow background -->
+        <div class="latest-stories">
+          <h3>LATEST STORIES</h3>
+          <ul>
+            <li>
+              <a href="#">Amy Schneider’s Jeopardy! Streak Ends</a>
+              <a style: font-size: 10px>JANUARY 26,2022.11:43 PM EST</a>
+            </li>
+            <li>
+              <a href="#"
+                >'Writing With Fire' Shines a Light on All-Women News Outlet</a
+              >
+              <a>JANUARY 26,2022.9:00 PM EST</a>
+            </li>
+            <li>
+              <a href="#">Moderna Booster May Wane After 6 Months</a>
+              <a>JANUARY 26,2022.5:51 PM EST</a>
+            </li>
+            <li>
+              <a href="#"
+                >Pressure Mounts for Biden to Nominate a Black Woman to the
+                Supreme...</a
+              >
+              <a>JANUARY 26,2022.3:51 PM EST</a>
+            </li>
+            <li>
+              <a href="#"
+                >The James Webb Space Telescope is in Position—And Now We
+                Wait</a
+              >
+              <a>JANUARY 26,2022.3:46 PM EST</a>
+            </li>
+            <li>
+              <a href="#"
+                >We Urgently Need a New National COVID-19 Response Plan</a
+              >
+              <a>JANUARY 26,2022.3:13 PM EST</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

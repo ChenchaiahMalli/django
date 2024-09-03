@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello this My pege</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+            <br>
+        <label for="items">Items</label>
+        <input type="number" name="items" id="items">
+
+        <br>
+        <label>Veg/Non-veg: </label>
+        <input type="radio" name="foodtype" id="veg" value="veg">
+        <label for="veg">Veg</label>
+
+        <input type="radio" name+"foodtype" id="nonveg" value="nonveg">
+        <label for="nonveg">Non Veg<?label>
+        <br>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price">
+        <br>
+        <button>Submit</button>
+        </form>
+
+</body>
+</html>
